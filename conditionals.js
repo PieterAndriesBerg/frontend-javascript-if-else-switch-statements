@@ -8,25 +8,30 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
-
+const equal = 10 === 20;
+console.log(equal);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
-
+const isEqual = 10 !== 11;
+console.log(isEqual);
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
-
+const isThisEqual = "zoet" === "sappig";
+console.log(isEqual);
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
-
-
+const rapportNumber = 9;
+if (rapportNumber > 8){
+     console.log("Cum Laude!");
+}
 // ==========================================
 // 5a. Gebruik onderstaande variabelen isRaining en temperature;
 // 5b. Schrijf een script dat "Je kunt een korte broek aan!" logt wanneer het niet regent EN de temperatuur hoger is dan 21 graden
@@ -35,4 +40,10 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 
 const isRaining = false;
-const temperature = 23;
+const temperature = 22;
+
+if (isRaining === false & temperature > 21) {
+    console.log("Je kunt een korte broek aan!");
+} else if(isRaining | temperature < 12) {
+    console.log("Doe een jas aan!");
+}
